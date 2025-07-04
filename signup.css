@@ -1,0 +1,182 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sitka text;
+}
+
+html,body
+  { 
+    background: -webkit-linear-gradient(right, #b15df6, #e4d9ff, #ebcaf6,#c162f1);
+    background-size:cover;
+    position: relative;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+ }
+form
+    {
+      background: transparent;
+      border: 5px solid rgba(18, 1, 115, 0.5); 
+        padding: 20px;
+        border-radius: 10px; 
+        color: rgb(210, 240, 243);
+        width: 430px;
+        height: 450px;
+        opacity: 0.7;
+        position: relative;
+        top:40px;
+        bottom: 200px;
+        right: 100px;
+        left: 500px;
+    }
+h2
+    {
+       color: black;
+       text-align: center;
+       padding-top: 20px; 
+    }
+#toggle-password{
+    position: relative;
+    top:50px;
+    right: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #555;
+}
+#toggle-confirm-password{
+    position: relative;
+    top:50px;
+    right: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #555;
+}
+
+  #password-match-message {
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+ 
+  .submit
+  {
+  width: 300px;
+  height: 40px;
+  position: absolute;
+  right: 60px;
+  bottom:140px;
+  font-weight: bold;
+  font-size: x-large;
+  background: -webkit-linear-gradient(right, #3234a8, #5e27ea, #4a4ace,#3a20ce);
+  border: none;
+  outline:cadetblue;
+  border-radius: 8px;
+  padding: 8px,8px,2px,2px;
+  }
+.submit:hover{
+    transform: translateY(-5px); 
+}
+#resendVerificationBtn{
+  width: 300px;
+  height: 40px;
+  position: relative;
+  left: 567px;
+  bottom:80px;
+  font-weight: bold;
+  font-size: large;
+  background: transparent;
+  border-bottom: 2px solid rgb(3, 99, 120);
+  border-top: 2px solid rgb(3, 99, 120);
+  border-left: 2px solid rgb(56, 136, 154);
+  border-right: 2px solid rgb(56, 136, 154);
+  border-radius: 8px;
+  padding: 8px,8px,2px,2px;
+}
+#resendVerificationBtn:hover{
+  transform: translateY(-5px); 
+}
+.login_info
+    {
+    text-align: center;
+    width:300px;
+    height: 40px ;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: relative;
+    border-bottom: 2px solid rgb(4, 4, 214);
+    padding: 20px;
+    right:-33px;
+    top:40px;
+    color: black;
+    font-size:medium;
+    }
+::placeholder
+    {
+        color:black;
+        font-size:500;
+    }
+
+.google
+    {
+    position: relative;
+    left: 410px;
+    bottom:25px;
+    font-size:large;
+    background-color: transparent;
+    border-top: 2px solid rgb(4, 4, 214);
+    border-bottom: 2px solid rgb(4, 4, 214);
+    border-left: none;
+    border-right: none;
+    color: black;
+    border-radius: 5px;
+    padding:5px;
+    }    
+    .google:hover {
+        color: #681290;
+        transform: translateY(-5px); 
+      }
+      #messageBox {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        min-width: 200px;
+        max-width: 80%;
+        color: black;
+        font-size: large;
+        padding: 12px 20px;
+        border-radius: 12px;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        box-shadow: 0 4px 12px rgb(145, 76, 230);
+        z-index: 1000;
+        display: none;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      /* Message Types */
+      #messageBox.success {
+        background-color: #d5bedd;
+        color: #6b0491;
+        border: 1px solid #a7f3d0;
+      }
+      
+      #messageBox.error {
+        background-color: #fff1f2;
+        color: #b91c1c;
+        border: 1px solid #fca5a5;
+      }
+      
+      #messageBox.info {
+        background-color: #eff6ff;
+        color: #1d4ed8;
+        border: 1px solid #bfdbfe;
+      }
+      
+      /* Show class */
+      #messageBox.show {
+        display: block;
+      }
+      

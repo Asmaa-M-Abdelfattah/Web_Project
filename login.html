@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOGIN</title>
+  <link href="/css/style.css" rel="stylesheet" />
+  <link href="/css/login.css" rel="stylesheet" />
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+    </ul>
+</nav>
+
+  <form id="login">
+    <h2>LOGIN</h2>
+    <input
+      type="email"
+      name="email"
+      id="email"
+      placeholder="enter your email"
+      class="login_info"
+      autocomplete="email"
+      required
+    />
+    <input
+      type="password"
+      name="password"
+      id="password"
+      placeholder="enter your password"
+      class="login_info"
+      autocomplete="current-password"
+      required
+    />
+    <label>
+      <input type="checkbox" id="toggle-password" />
+    </label>
+    <input type="submit" name="submit" value="Log in" class="submit" id="submit"/>
+    <p class="paragraph">Don't have an account? <a href="signup.html">Sign up here</a></p>
+  </form>
+  <div id="messageBox" class="hidden"></div>
+  <p><a href="#" id="forgot-password">Forgot password!</a></p>
+  <script type="module" src="/js/login.js"></script>
+
+</body>
+</html>

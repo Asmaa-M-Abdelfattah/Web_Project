@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Data Dashboard</title>
+<link rel="stylesheet" href="/css/carinfo.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v8.2.0/ol.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js"></script>
+</head>
+<body>
+<div class="dashboard-container">
+<header>
+<h1>Dashboard</h1>
+<div class="user-info">
+<span id="user-email"></span>
+<button id="logout-btn">Logout</button>
+</div>
+</header>
+
+<h2>Real-Time Car Dashboard</h2>
+
+<div id="carDataContainer"></div>
+
+<script type="module" src="/js/carinfo.js"></script>
+</body>
+</html>
